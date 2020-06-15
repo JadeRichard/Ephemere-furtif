@@ -26,15 +26,15 @@ Pour la vidéo que j'avais choisi au début de ce projet, il s'agit de la vidéo
 
 J'ai commencé par une scène simple, blanche sans décorations pour tester le bon fonctionnement de mon code pour instancier les personnages.
 
-!(https://nsa40.casimages.com/img/2020/06/15/200615093254994986.jpg)
+![1](https://nsa40.casimages.com/img/2020/06/15/200615093254994986.jpg)
 
 J'ai ensuite commencé à « décorer » ma scène, j'ai testé des effets de particules dans le fond pour en faire quelque chose qui n'était pas statique. J'ai importé mes modèles maya brouillons, les ai placés à différents endroits en haut du bloc qui représentait le bâtiment principal. Mais deux problèmes arrivent. Déjà, je n'ai pas encore mis en place de système de trappe du coup les personnages s'entassent, pas de souci à ce moment là sauf que quelques secondes plus tard, à cause du nombre de personnages instanciés qui ne diminue pas l'application se met à ramer. Les mouvements sont saccadés, ce n'est plus aussi intéressant alors je dois essayer de régler ce souci. En plus, la chute n'est pas assez longue parce que les personnages sont trop grands. 
 
-!(https://nsa40.casimages.com/img/2020/06/15/200615093418150429.jpg)
+![2](https://nsa40.casimages.com/img/2020/06/15/200615093418150429.jpg)
 
 Je décide donc de réduire la taille des personnages et de me mettre à penser au système de trappe. Je prends l'option qui me paraît la plus simple pour ça, c'est à dire une animation unity. J'ai également changé l'angle de la caméra, afin qu'il y ait un léger effet de contre plongée. Je rajoute des bâtiments autour du bâtiment principal, je ne les détaille pas autant afin de porter l'attention sur le bâtiment central. Afin d'un peu plus concentrer du spectateur sur la scène et ce qui se passe, je mets un spotlight devant le bâtiment. Il y a toujours un problème même si les personnages partent sos la trappe, parce qu'ils ne disparaissent pas de la scène pour autant. Je mets donc sur le préfab de mon personnage un code qui les fait disparaître au bout d'un nombre limité de secondes. Etant donné que ma trappe s'ouvre toutes les quinze secondes, j'ai fait disparaître les personnages au bout de seize secondes. J'ai ensuite travaillé le son, faisant en sorte que la corne de brume sonne plus souvent que la trappe ne s'ouvre.  
 
-!(https://nsa40.casimages.com/img/2020/06/15/200615093418289245.jpg)
+![3](https://nsa40.casimages.com/img/2020/06/15/200615093418289245.jpg)
 
 Ce qui me reste maintenant à faire serait d'ajouter plus de personnages et pour cela, je dois régler les problèmes techniques qui font que l'application se met à ramer au bout d'un certain nombre de secondes. Le plus simple serait d'enfin trouver un moyen de mettre un box collider et un code qui ferait disparaître les personnage au contacte dudit box collider. 
 
